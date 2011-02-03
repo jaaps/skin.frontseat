@@ -1,8 +1,18 @@
 <?xml version="1.0"?>
 <window id="0">
-	<defaultcontrol always="true">300</defaultcontrol>
+	<defaultcontrol always="true">3999</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
+		<control type="button" id="3999">
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<onfocus>RunScript(script.plexbmc)</onfocus>
+			<onfocus>SetFocus(300)</onfocus>
+		</control>
 		<include>Background_Home</include>
 		<control type="grouplist">
 			<orientation>horizontal</orientation>
@@ -104,21 +114,54 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<description>Favorites Menu</description>
-						<label>Movies</label>
-						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=10&name=Movies",return)</onclick>
+						<label>$INFO[Window.Property(PlexbmcSection.1.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.1.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.1.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.1.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.1.Title))</visible>
 					</item>
 					<item id="2">
-						<label>TV Shows</label>
-						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=11&name=TVShows")</onclick>
+						<label>$INFO[Window.Property(PlexbmcSection.2.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.2.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.2.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.2.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.2.Title))</visible>
 					</item>
-                    <item id="3">
-						<label>Plugins</label>
-						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=12&name=Plugins")</onclick>
+					<item id="3">
+						<label>$INFO[Window.Property(PlexbmcSection.3.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.3.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.3.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.3.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.3.Title))</visible>
 					</item>
-                    <item id="4">
-						<label>Servers</label>
-						<onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http&mode=13&name=Servers")</onclick>
+					<item id="4">
+						<label>$INFO[Window.Property(PlexbmcSection.4.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.4.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.4.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.4.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.4.Title))</visible>
+					</item>
+					<item id="5">
+						<label>$INFO[Window.Property(PlexbmcSection.5.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.5.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.5.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.5.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.5.Title))</visible>
+					</item>
+					<item id="6">
+						<label>$INFO[Window.Property(PlexbmcSection.6.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.6.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.6.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.6.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.6.Title))</visible>
+					</item>
+					<item id="7">
+						<label>$INFO[Window.Property(PlexbmcSection.7.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.7.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.7.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.7.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.7.Title))</visible>
+					</item>
+					<item id="8">
+						<label>$INFO[Window.Property(PlexbmcSection.8.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.8.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.8.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.8.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.8.Title))</visible>
+					</item>
+					<item id="9">
+						<label>$INFO[Window.Property(PlexbmcSection.9.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.9.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.9.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.9.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.9.Title))</visible>
+					</item>
+					<item id="10">
+						<label>$INFO[Window.Property(PlexbmcSection.10.Title)]</label>
+						<onclick>ActivateWindow(10024,"plugin://plugin.video.plexbmc/?url=$INFO[Window.Property(PlexbmcSection.10.Path)]&amp;mode=$INFO[Window.Property(PlexbmcSection.10.Mode)]&amp;name=$INFO[Window.Property(PlexbmcSection.10.Title)]",return)</onclick>
+						<visible>!IsEmpty(Window.Property(PlexbmcSection.10.Title))</visible>
 					</item>
 				</content>
 			</control>
