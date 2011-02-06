@@ -56,13 +56,113 @@
 				<visible>Container(300).HasFocus(1) + Control.HasFocus(300)</visible>
 				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
 				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
-				<texture>backgrounds/favorites.png</texture>
+				<texture>$INFO[Window.Property(PlexbmcSection.1.Fanart)]</texture>
 				<posx>0</posx>
 				<posy>-120</posy>
 				<width>1280</width>
 				<height>720</height>
 				<visible>true</visible>
 			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(2) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.2.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(3) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.3.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(4) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.4.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(5) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.5.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(6) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.6.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(7) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.7.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(8) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.8.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(9) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.9.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(10) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>$INFO[Window.Property(PlexbmcSection.10.Fanart)]</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			
 			<control type="largeimage">
 				<visible>Container(300).HasFocus(1000) + Control.HasFocus(300)</visible>
 				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
